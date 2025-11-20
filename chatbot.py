@@ -66,7 +66,7 @@ def handle_status(status, eta):
     elif status == "delivered":
         print("\nBot: The package was delivered.")
 
-        # Check if package is missing.
+        # Check if package is delivered but missing.
         missing = ask_yes_no("Bot: Are you still unable to find the package? (yes/no): ")
         if missing:
             print("Bot: I'm sorry you can't find your package.")
